@@ -1,0 +1,16 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "main": "build.js",
+  "author": "Neil Mastroianni",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/global.css -o ./src/output.css --watch",
+    "build": "yarn tailwindcss -i ./src/global.css -o ./dist/output.css --minify && node build.js"
+  },
+  "devDependencies": {
+    "html-minifier": "^4.0.0",
+    "tailwindcss": "^3.3.0"
+  }
+}
